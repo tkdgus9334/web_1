@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style media="screen">
+
+
+    #p_2 {
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <input id="change_sum" type="button" value="change_2" onclick="
+  if(document.querySelector('#change_sum').value === 'change_2')
+  {document.querySelector('body').style.backgroundColor ='black';
+document.querySelector('#change_sum').value ='change_1'}
+  else{document.querySelector('body').style.backgroundColor ='white';
+document.querySelector('#change_sum').value = 'change_2'}">
+  <p id=p_2>
+    힝 깜짝놀랐지 </p>
+  </*document.querySelector('#change_sum')을 this로 간결화 가능*/>
+  <p >
+    안녕하세요 위에 버튼을 눌러보세요</p>
+    <input  type="button" value="change_2" onclick="
+    var target = document.querySelector('body');
+    if(this.value === 'change_2')
+    {target.style.backgroundColor ='black';
+  this.value ='change_1';}
+    else{target.style.backgroundColor ='white';
+  this.value = 'change_2';}">
+
+</body>
+
+</html>

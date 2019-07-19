@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<meta charset="utf-8">
+
+<head>
+
+	<title>www.hsh.com</title>
+	<style>
+		body {
+			background-color: lightblue;
+		}
+
+		a:link {
+			color: brown;
+		}
+
+		a:hover {
+			color: blue;
+		}
+
+		h2 {
+			color: green;
+		}
+
+		abbr {
+			color: green;
+		}
+
+		#pr1 {
+			font-style: italic;
+		}
+
+		ol .active {
+			text-decoration: underline;
+		}
+
+		label {
+			color: white
+		}
+	</style>
+	</ 은 id로 개별적으로 꾸밀때 .은 class로 그룹으로 꾸밀떄>
+</head>
+
+<body>
+
+	<h1> <a href="이게뭐람.html"> 코딩 실습 </a></h1>
+
+	<P>
+		<ol>
+			<li class="active">이제 시작</li>
+			<li id="pr1">두번째 실기</li>
+			<li class="active">마스터</li>
+		</ol>
+	</p>
+
+
+	<h2>체크박스</h2>
+	<p>다음 중 맞는 정답을 고르시오.</p>
+	<form action="">
+
+		<input type="radio" name="name"> 1 <br>
+		<input type="radio" name="name"> 2 <br>
+		<input type="radio" name="name"> 3 <br>
+
+	</form>
+
+	<p>다음 중 맞는 정답을 모두 고르시오.</p>
+	<form>
+
+		<label><input type="checkbox" name="lecture"> sang </label> <br>
+		<input type="checkbox" name="lecture" checked> 상현 <br>
+		<input type="checkbox" name="lecture"> han <br>
+		<input type="checkbox" name="lecture" value="cpp"> 한상현
+
+	</form>
+
+	<p>다음 중 여러분이 가장 좋아하는 <strong> <abbr title="주기적으로 즐기는것">문화생활을</abbr> </strong> 골라주세요.</p>
+
+	<form>
+
+		<select name="name">
+			<option value="sang" selected> 하이
+			<option value="tae"> 안녕
+			<option value="hsh"> 하십
+			<option value="kte"> 니까</option>
+		</select>
+		<p><input type="submit"></p>
+
+	</form>
+
+	<p><a href="1.html">잠시 쉬어가는 시간</a></p>
+
+	<form>
+
+		<label for="ex">이름</label>: <br>
+		<input id="ex" type="text" name="ex_name" value="둘리">
+
+		<p>
+			<input type="text" name="id_1" placeholder="위에랑 무슨차이">
+			<input type="submit"> </p>
+
+	</form>
+
+	<form>
+
+		<p> <input type="text" name="id_2" placeholder="이건 무슨차이" required>
+			<input type="submit"> </p>
+
+	</form>
+
+	<form>
+
+		자기소개서 :
+		<p><textarea name="blank" rows="5" cols="40">아무거나 쓰면 된다. css cheatsheet selector </textarea></p>
+		<p><input type="submit"></p>
+
+	</form>
+
+
+
+</body>
+
+</html>
